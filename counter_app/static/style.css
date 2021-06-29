@@ -1,0 +1,28 @@
+* {
+    padding: 0px;
+    margin: 0px auto;
+}
+
+#wrapper {
+    text-align: center;
+    background-color:salmon;
+    color: wheat;
+    padding: 20px;
+    width: 300px;
+}
+
+button {
+    border-radius: 10px;
+    background-color: wheat;
+    color: salmon;
+    font-size: 15px;
+    padding:5px;
+}
+
+input {
+    border-radius: 10px;
+    background-color: wheat;
+    color: salmon;
+    font-size: 15px;
+    padding:5px;
+}

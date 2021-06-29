@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    {% load static %}
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Counter:<br> {{ request.session.counter }}</h1><br>
+        <a href="/destroy"><button>Reset</button></a>
+        <a href="/plus_two"><button>Plus Two</button></a><br><br>
+        <form action="/num" method="post">
+            {% csrf_token %}
+            <h2>Add this number:</h2>
+            <input type="number" id="num" name="num"><br><br>
+            <input type="submit" id="done" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
